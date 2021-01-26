@@ -128,6 +128,8 @@ namespace MeetMe.Areas.Admin.Controllers
                 return NotFound();
             }
 
+            helperService.DeletePhoto(meeting.PhotoPath);
+
             _db.Remove(meeting);
             _db.SaveChanges();
             return Json(new { success = true });
