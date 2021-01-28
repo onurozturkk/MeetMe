@@ -70,10 +70,13 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+.card-meeting {
+    height: 220px;
+}
+
 .meeting-img {
-    height: 15vw;
-    min-height: 220px;
-    max-height: 300px;
+    height: 100%;
+    width: auto;
 }
 
 
@@ -86,6 +89,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
+    margin-bottom:0;
 }
